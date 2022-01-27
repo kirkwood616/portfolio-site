@@ -1,31 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap");
 
+:root {
+  --black: #000000;
+  --dark-grey: #141414;
+  --medium-grey: #282828;
+  --light-grey: #b3b3b3;
+  --dark-purple: #230046;
+  --medium-purple: #320064;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #404040;
+  background-color: var(--black);
+  color: white;
 }
 
 a {
-  color: blue;
-  text-decoration: none;
+  color: var(--light-grey);
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:visited {
-  color: blue;
+  color: var(--light-grey);
 }
 
 header {
   width: 100%;
   padding: 15px 0;
-  background-color: bisque;
   text-align: center;
-  background-color: #282828;
-  box-shadow: 0px 0px 15px black;
+  background-color: var(--dark-grey);
+  /* box-shadow: 0px 0px 15px var(--medium-grey); */
 }
 
 h1 {
@@ -43,25 +51,24 @@ h3 {
 
 h2 {
   font-family: "Orbitron", sans-serif;
-  font-size: 3rem;
+  font-size: 2.75rem;
   letter-spacing: 5px;
 }
 
 h4 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.25rem;
-  color: #b3b3b3;
+  color: var(--light-grey);
   margin: 0.5rem 0 0 0;
 }
 
 #main {
-  background-color: #b3b3b3;
+  background-color: var(--dark-grey);
   margin: 50px 25px;
   padding: 10px;
   min-height: 500px;
-  border-radius: 25px;
   text-align: center;
-  box-shadow: 0px 0px 15px black;
+  box-shadow: 0px 0px 20px var(--medium-purple);
 }
 
 #container {
@@ -70,11 +77,10 @@ h4 {
 }
 
 .card {
-  background-color: white;
-  width: 500px;
+  background-color: var(--black);
+  max-width: 400px;
   margin: 10px;
   padding: 15px;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,4 +102,27 @@ h4 {
   font-weight: 900;
   font-size: 3rem;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
 }
