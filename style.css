@@ -7,6 +7,12 @@
   --light-grey: #b3b3b3;
   --dark-purple: #230046;
   --medium-purple: #320064;
+
+  --dark-bp: #100b33;
+  --navy-bp: #0c1554;
+  --med-bp: #2e3b69;
+  --med-blue: #374fa3;
+  --lt-purple: #6e67ba;
 }
 
 body {
@@ -47,6 +53,8 @@ h1 {
 h3 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
+  margin: 0;
+  margin: 2rem 0 1rem 0;
 }
 
 h2 {
@@ -68,7 +76,7 @@ h4 {
   padding: 10px;
   min-height: 500px;
   text-align: center;
-  box-shadow: 0px 0px 20px var(--medium-purple);
+  /* box-shadow: 0px 0px 20px var(--medium-purple); */
 }
 
 #container {
@@ -83,7 +91,6 @@ h4 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
