@@ -1,29 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap");
 
 :root {
-  --black: #000000;
-  --dark-grey: #141414;
-  --medium-grey: #282828;
-  --light-grey: #b3b3b3;
-  --dark-purple: #230046;
-  --medium-purple: #320064;
-
-  --dark-bp: #100b33;
-  --navy-bp: #0c1554;
-  --med-bp: #2e3b69;
-  --med-blue: #374fa3;
-  --lt-purple: #6e67ba;
+  --deep-blue: #081b33;
+  --dark-blue: #152642;
+  --dark-matte-blue: #353c51;
+  --medium-dark-blue: #2f4562;
+  --medium-blue: #506680;
+  --light-blue: #767d92;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: var(--black);
+  background-color: var(--deep-blue);
   color: white;
 }
 
 a {
-  color: var(--light-grey);
+  color: lightblue;
 }
 
 a:hover {
@@ -31,26 +25,27 @@ a:hover {
 }
 
 a:visited {
-  color: var(--light-grey);
+  color: lightblue;
 }
 
 header {
   width: 100%;
   padding: 15px 0;
   text-align: center;
-  background-color: var(--dark-grey);
-  /* box-shadow: 0px 0px 15px var(--medium-grey); */
+  background-color: var(--deep-blue);
+  box-shadow: 0px -3px 20px var(--light-blue);
 }
 
 h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  margin: 10px;
+  margin: 0px;
   color: white;
 }
 
 h3 {
+  color: var(--light-blue);
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
   margin: 0;
@@ -58,57 +53,102 @@ h3 {
 }
 
 h2 {
+  color: var(--light-blue);
   font-family: "Orbitron", sans-serif;
   font-size: 2.75rem;
   letter-spacing: 5px;
+  margin-bottom: 0.75rem;
 }
 
 h4 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.25rem;
-  color: var(--light-grey);
-  margin: 0.5rem 0 0 0;
+  color: var(--light-blue);
+  margin: 0;
+}
+
+.builtWith {
+  color: var(--light-blue);
+  margin-bottom: 0;
+}
+
+.buildTools {
+  color: var(--light-blue);
+  margin-top: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover .buildTools,
+.card.hover .buildTools {
+  color: white;
+}
+
+.links {
+  margin-top: auto;
 }
 
 #main {
-  background-color: var(--dark-grey);
-  margin: 50px 25px;
-  padding: 10px;
+  border-radius: 1rem;
+  /* margin: 50px 25px; */
   min-height: 500px;
   text-align: center;
-  /* box-shadow: 0px 0px 20px var(--medium-purple); */
+  width: 100%;
 }
 
 #container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  background-color: var(--black);
-  max-width: 400px;
+  background-color: var(--deep-blue);
+  border: 3px solid var(--dark-matte-blue);
+  border-radius: 1rem;
+  width: 375px;
   margin: 10px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--dark-matte-blue);
+  border-color: var(--light-blue);
+  box-shadow: 0 0 15px rgba(118, 125, 146, 0.5);
+  transform: scale(1.02);
 }
 
 .thumbnail {
-  background-color: #404040;
+  background-color: var(--medium-blue);
   height: 200px;
   width: 200px;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover .thumbnail,
+.card.hover .thumbnail {
+  background-color: var(--light-blue);
+  box-shadow: 0px 0px 10px var(--dark-blue);
 }
 
 .thumbText {
   font-family: "Orbitron", sans-serif;
   font-weight: 900;
   font-size: 3rem;
-  color: white;
+  color: var(--dark-blue);
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover .thumbText,
+.card.hover .thumbText {
+  color: var(--deep-blue);
 }
 
 @media only screen and (max-width: 768px) {
@@ -118,7 +158,21 @@ h4 {
   }
 
   .card {
-    width: fit-content;
+    background-color: var(--dark-matte-blue);
+    border-color: var(--light-blue);
+  }
+
+  .thumbnail {
+    background-color: var(--light-blue);
+    box-shadow: 0px 0px 10px var(--dark-blue);
+  }
+
+  .thumbText {
+    color: var(--deep-blue);
+  }
+
+  .buildTools {
+    color: white;
   }
 
   h1 {
@@ -131,5 +185,15 @@ h4 {
 
   h4 {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: fit-content;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
