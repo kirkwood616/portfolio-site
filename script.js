@@ -1,4 +1,5 @@
-import projects from "/projects.js";
+// import projects from "/projects.js";
+import projects from "/portfolio-site/projects.js";
 
 const main = document.getElementById("main");
 const container = document.getElementById("container");
