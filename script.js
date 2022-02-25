@@ -1,5 +1,4 @@
-// import projects from "/projects.js";
-import projects from "/portfolio-site/projects.js";
+import projects from "./projects.js";
 
 const main = document.getElementById("main");
 const container = document.getElementById("container");
@@ -26,14 +25,14 @@ projects.forEach((project) => {
   const image1 = document.createElement("img");
   image1.classList.add("thumbnailImage");
   image1.classList.add(project.className);
-  image1.src = project.image1;
+  image1.src = `${project.image1}`;
   image1.setAttribute("alt", project.name);
   thumbnail.appendChild(image1);
   function mouseOver() {
-    image1.src = project.image2;
+    image1.src = `${project.image2}`;
   }
   function mouseOut() {
-    image1.src = project.image1;
+    image1.src = `${project.image1}`;
   }
   card.addEventListener("mouseover", mouseOver);
   card.addEventListener("mouseout", mouseOut);
