@@ -54,6 +54,18 @@ let projects = [
     sourceCode: "https://github.com/kirkwood616/react-lab04",
   },
   {
+    name: "My Thoughts",
+    thumbText: "MT",
+    image1: "/public/mt.png",
+    image2: "/public/mt-gif.gif",
+    className: "myThoughts",
+    description:
+      "React App for adding, viewing & deleting your personal thoughts.",
+    buildTools: ["React", "TypeScript", "Node.js", "HTML", "CSS"],
+    liveSite: "https://kirkwood616.github.io/react-lab02",
+    sourceCode: "https://github.com/kirkwood616/react-lab02",
+  },
+  {
     name: "Animal Memory Match",
     thumbText: "AMM",
     image1: "/public/amm.png",
