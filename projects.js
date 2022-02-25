@@ -25,9 +25,9 @@ let projects = [
   {
     name: "Movie Hub",
     thumbText: "MH",
-    image1: "/public/M&M logo plain.png",
-    image2: "/public/M&M veterinary clinic.gif",
-    className: "mmVetApp",
+    image1: "/public/mh.png",
+    image2: "/public/mh-gif.gif",
+    className: "movieHub",
     description:
       "A movie database app where you can search, view & add movies to a watchlist.",
     buildTools: [
