@@ -143,6 +143,8 @@ h4 {
   transform: scale(1.02);
 }
 
+/*==> THUMBNAILS  */
+
 .thumbnail {
   background-color: var(--medium-blue);
   height: 200px;
@@ -160,8 +162,22 @@ h4 {
   box-shadow: 0px 0px 10px 5px var(--deep-blue);
 }
 
+.thumbnailShadow {
+  border-radius: 1rem;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  transition: all 0.25s ease-in-out;
+}
+
+.card:hover .thumbnailShadow,
+.card.hover .thumbnailShadow {
+  box-shadow: inset 0px 0px 15px 0px black;
+}
+
 .thumbnailImage {
   height: 200px;
+  width: 200px;
   border-radius: 1rem;
   opacity: 0.15;
 }
@@ -171,25 +187,15 @@ h4 {
   opacity: 1;
 }
 
-.card:hover .mmVetApp,
+/* .card:hover .mmVetApp,
 .card.hover .mmVetApp {
   content: url("/public/M&M veterinary clinic.gif");
-}
+} */
 
-.thumbnailShadow {
-  border-radius: 1rem;
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  transition: all 0.25s ease-in-out;
-}
-
-/*==> THUMBNAILS  */
-
-.card:hover .thumbnailShadow,
-.card.hover .thumbnailShadow {
-  box-shadow: inset 0px 0px 15px 0px black;
-}
+/* .card:hover .movieHub,
+.card.hover .movieHub {
+  content: url("/public/mh-gif.gif");
+} */
 
 /*==========>> MEDIA QUERIES */
 
