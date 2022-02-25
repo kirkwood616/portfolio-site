@@ -187,16 +187,6 @@ h4 {
   opacity: 1;
 }
 
-/* .card:hover .mmVetApp,
-.card.hover .mmVetApp {
-  content: url("/public/M&M veterinary clinic.gif");
-} */
-
-/* .card:hover .movieHub,
-.card.hover .movieHub {
-  content: url("/public/mh-gif.gif");
-} */
-
 /*==========>> MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {

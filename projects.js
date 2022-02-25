@@ -45,8 +45,8 @@ let projects = [
   {
     name: "Gif Sifter",
     thumbText: "GS",
-    image1: "/public/M&M logo plain.png",
-    image2: "/public/M&M veterinary clinic.gif",
+    image1: "/public/gs.png",
+    image2: "/public/gs-gif.gif",
     className: "mmVetApp",
     description: "React App utilizing GIPHY's API to search for GIF images.",
     buildTools: ["React", "TypeScript", "Web API", "Node.js", "HTML", "CSS"],
@@ -56,8 +56,8 @@ let projects = [
   {
     name: "Animal Memory Match",
     thumbText: "AMM",
-    image1: "/public/M&M logo plain.png",
-    image2: "/public/M&M veterinary clinic.gif",
+    image1: "/public/amm.png",
+    image2: "/public/amm-gif.gif",
     className: "mmVetApp",
     description: "A classic card matching memory game with an Animal theme.",
     buildTools: ["HTML", "CSS", "JavaScript"],
@@ -67,8 +67,8 @@ let projects = [
   {
     name: "SVG CSS Animation",
     thumbText: "SCA",
-    image1: "/public/M&M logo plain.png",
-    image2: "/public/M&M veterinary clinic.gif",
+    image1: "/public/sca.png",
+    image2: "/public/sca-gif.gif",
     className: "mmVetApp",
     description: "An exploration of animating an SVG with CSS keyframes.",
     buildTools: ["HTML", "CSS", "JavaScript"],
