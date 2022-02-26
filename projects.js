@@ -2,8 +2,8 @@ let projects = [
   {
     name: "M&M Vet App",
     thumbText: "M&M",
-    image1: "/public/M&M logo plain.png",
-    image2: "/public/M&M veterinary clinic.gif",
+    image1: "public/M&M logo plain.png",
+    image2: "public/M&M veterinary clinic.gif",
     className: "mmVetApp",
     description:
       "A customer portal app for a fictional veterinary clinic with CRUD features.",
@@ -25,8 +25,8 @@ let projects = [
   {
     name: "Movie Hub",
     thumbText: "MH",
-    image1: "/public/mh.png",
-    image2: "/public/mh-gif.gif",
+    image1: "public/mh.png",
+    image2: "public/mh-gif.gif",
     className: "movieHub",
     description:
       "A movie database app where you can search, view & add movies to a watchlist.",
@@ -45,8 +45,8 @@ let projects = [
   {
     name: "Gif Sifter",
     thumbText: "GS",
-    image1: "/public/gs.png",
-    image2: "/public/gs-gif.gif",
+    image1: "public/gs.png",
+    image2: "public/gs-gif.gif",
     className: "mmVetApp",
     description: "React App utilizing GIPHY's API to search for GIF images.",
     buildTools: ["React", "TypeScript", "Web API", "Node.js", "HTML", "CSS"],
@@ -56,8 +56,8 @@ let projects = [
   {
     name: "My Thoughts",
     thumbText: "MT",
-    image1: "/public/mt.png",
-    image2: "/public/mt-gif.gif",
+    image1: "public/mt.png",
+    image2: "public/mt-gif.gif",
     className: "myThoughts",
     description:
       "React App for adding, viewing & deleting your personal thoughts.",
@@ -68,8 +68,8 @@ let projects = [
   {
     name: "Animal Memory Match",
     thumbText: "AMM",
-    image1: "/public/amm.png",
-    image2: "/public/amm-gif.gif",
+    image1: "public/amm.png",
+    image2: "public/amm-gif.gif",
     className: "mmVetApp",
     description: "A classic card matching memory game with an Animal theme.",
     buildTools: ["HTML", "CSS", "JavaScript"],
@@ -79,8 +79,8 @@ let projects = [
   {
     name: "SVG CSS Animation",
     thumbText: "SCA",
-    image1: "/public/sca.png",
-    image2: "/public/sca-gif.gif",
+    image1: "public/sca.png",
+    image2: "public/sca-gif.gif",
     className: "mmVetApp",
     description: "An exploration of animating an SVG with CSS keyframes.",
     buildTools: ["HTML", "CSS", "JavaScript"],
