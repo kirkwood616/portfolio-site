@@ -187,6 +187,41 @@ h4 {
   opacity: 1;
 }
 
+.card:hover .mmVetApp,
+.card.hover .mmVetApp {
+  content: url("/public/M&M veterinary clinic.gif");
+}
+
+.card:hover .movieHub,
+.card.hover .movieHub {
+  content: url("/public/mh-gif.gif");
+}
+
+.card:hover .myThoughts,
+.card.hover .myThoughts {
+  content: url("/public/mt-gif.gif");
+}
+
+.card:hover .gifSifter,
+.card.hover .gifSifter {
+  content: url("/public/gs-gif.gif");
+}
+
+.card:hover .myThoughts,
+.card.hover .myThoughts {
+  content: url("/public/mt-gif.gif");
+}
+
+.card:hover .amm,
+.card.hover .amm {
+  content: url("/public/amm-gif.gif");
+}
+
+.card:hover .sca,
+.card.hover .sca {
+  content: url("/public/sca-gif.gif");
+}
+
 /*==========>> MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
