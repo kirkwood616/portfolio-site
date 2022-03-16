@@ -189,37 +189,37 @@ h4 {
 
 .card:hover .mmVetApp,
 .card.hover .mmVetApp {
-  content: url("./M&M veterinary clinic.gif");
+  content: url("./public/M&M veterinary clinic.gif");
 }
 
 .card:hover .movieHub,
 .card.hover .movieHub {
-  content: url("./mh-gif.gif");
+  content: url("./public/mh-gif.gif");
 }
 
 .card:hover .myThoughts,
 .card.hover .myThoughts {
-  content: url("./mt-gif.gif");
+  content: url("./public/mt-gif.gif");
 }
 
 .card:hover .gifSifter,
 .card.hover .gifSifter {
-  content: url("./gs-gif.gif");
+  content: url("./public/gs-gif.gif");
 }
 
 .card:hover .myThoughts,
 .card.hover .myThoughts {
-  content: url("./mt-gif.gif");
+  content: url("./public/mt-gif.gif");
 }
 
 .card:hover .amm,
 .card.hover .amm {
-  content: url("./amm-gif.gif");
+  content: url("./public/amm-gif.gif");
 }
 
 .card:hover .sca,
 .card.hover .sca {
-  content: url("./sca-gif.gif");
+  content: url("./public/sca-gif.gif");
 }
 
 /*==========>> MEDIA QUERIES */
