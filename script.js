@@ -28,12 +28,12 @@ projects.forEach((project) => {
   image1.src = `./${project.image1}`;
   image1.setAttribute("alt", project.name);
   thumbnail.appendChild(image1);
-  card.addEventListener("mouseenter", () => {
-    image1.src = `./${project.image2}`;
-  });
-  card.addEventListener("mouseleave", () => {
-    image1.src = `./${project.image1}`;
-  });
+  // card.addEventListener("mouseenter", () => {
+  //   image1.src = `./${project.image2}`;
+  // });
+  // card.addEventListener("mouseleave", () => {
+  //   image1.src = `./${project.image1}`;
+  // });
   // NAME
   const h3 = document.createElement("h3");
   h3.innerText = project.name;
