@@ -1,5 +1,16 @@
 let projects = [
   {
+    name: "ComplexApp",
+    thumbText: "CA",
+    image1: "public/ca.png",
+    image2: "public/ca-gif.gif",
+    className: "ca",
+    description: "A twitter-esque app for sharing & viewing thoughts & interacting with other users.",
+    buildTools: ["React", "JavaScript", "API", "Node.js", "Express", "Axios", "MongoDB", "Heroku", "Bootstrap", "Socket.IO", "HTML", "CSS"],
+    liveSite: "https://complexbuild.netlify.app/",
+    sourceCode: "https://github.com/kirkwood616/complex-react-frontend",
+  },
+  {
     name: "M&M Vet App",
     thumbText: "M&M",
     image1: "public/M&M logo plain.png",
