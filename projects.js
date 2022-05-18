@@ -1,5 +1,16 @@
 let projects = [
   {
+    name: "Filtered Students Box",
+    thumbText: "FSB",
+    image1: "public/fsb.png",
+    image2: "public/fsb-gif.gif",
+    className: "fsb",
+    description: "An exercise in searching & filtering students based on names and/or tags.",
+    buildTools: ["React", "TypeScript", "Axios", "HTML", "CSS"],
+    liveSite: "https://kirkwood616.github.io/fsb",
+    sourceCode: "https://github.com/kirkwood616/fsb",
+  },
+  {
     name: "ComplexApp",
     thumbText: "CA",
     image1: "public/ca.png",

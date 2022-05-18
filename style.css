@@ -187,6 +187,11 @@ h4 {
   opacity: 1;
 }
 
+.card:hover .fsb,
+fsbrd.hover .fsb {
+  content: url("./public/fsb-gif.gif");
+}
+
 .card:hover .ca,
 .card.hover .ca {
   content: url("./public/ca-gif.gif");
