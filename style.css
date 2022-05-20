@@ -10,23 +10,23 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
   background-color: var(--deep-blue);
   color: white;
   cursor: default;
   caret-color: #767d92;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 header {
-  width: 100%;
-  padding: 15px 0;
-  text-align: center;
   background-color: var(--deep-blue);
   box-shadow: 0px -3px 20px black;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
 }
 
-/*==========>> TEXT */
+/*==>> TEXT */
 
 a,
 a:visited {
@@ -49,7 +49,6 @@ h3 {
   color: var(--light-blue);
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
-  margin: 0;
   margin: 2rem 0 1rem 0;
 }
 
@@ -62,26 +61,10 @@ h2 {
 }
 
 h4 {
+  color: var(--light-blue);
   font-family: "Orbitron", sans-serif;
   font-size: 1.25rem;
-  color: var(--light-blue);
   margin: 0;
-}
-
-.thumbText {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  color: var(--dark-blue);
-  position: absolute;
-  transition: all 0.25s ease-in-out;
-  z-index: 1;
-}
-
-.card:hover .thumbText,
-.card.hover .thumbText {
-  color: var(--deep-blue);
-  opacity: 0;
 }
 
 .builtWith {
@@ -95,8 +78,7 @@ h4 {
   transition: all 0.25s ease-in-out;
 }
 
-.card:hover .buildTools,
-.card.hover .buildTools {
+.card:hover .buildTools {
   color: white;
 }
 
@@ -108,7 +90,7 @@ h4 {
   color: var(--light-blue);
 }
 
-/*==========>> SECTIONS */
+/*==>> SECTIONS */
 
 #main {
   border-radius: 1rem;
@@ -124,120 +106,136 @@ h4 {
 }
 
 .card {
+  align-items: center;
   background-color: var(--deep-blue);
   border: 3px solid var(--dark-matte-blue);
   border-radius: 1rem;
-  width: 375px;
-  margin: 10px;
-  padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 10px;
+  padding: 15px;
   transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  width: 375px;
 }
 
 .card:hover {
   background-color: var(--dark-matte-blue);
   border-color: var(--light-blue);
   box-shadow: 0 0 15px rgba(118, 125, 146, 0.5);
-  transform: scale(1.02);
+  transform: scale(1.02) translate3d(0, 0, 0);
+  -webkit-transform: scale(1.02) translate3d(0, 0, 0);
 }
 
-/*==> THUMBNAILS  */
+/*==>> THUMBNAILS  */
 
 .thumbnail {
-  background-color: var(--medium-blue);
-  height: 200px;
-  width: 200px;
-  border-radius: 15px;
-  display: flex;
   align-items: center;
+  background-color: var(--medium-blue);
+  border-radius: 1rem;
+  display: flex;
+  height: 200px;
   justify-content: center;
+  overflow: hidden;
+  position: relative;
   transition: all 0.25s ease-in-out;
+  width: 200px;
+  z-index: 1;
 }
 
-.card:hover .thumbnail,
-.card.hover .thumbnail {
-  background-color: var(--light-blue);
-  box-shadow: 0px 0px 10px 5px var(--deep-blue);
+.card:hover .thumbnail {
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px 0px black;
 }
 
 .thumbnailShadow {
   border-radius: 1rem;
-  height: 200px;
-  width: 200px;
+  height: inherit;
   position: absolute;
   transition: all 0.25s ease-in-out;
+  width: inherit;
+  z-index: 1;
 }
 
-.card:hover .thumbnailShadow,
-.card.hover .thumbnailShadow {
+.card:hover .thumbnailShadow {
+  border-radius: 1rem;
   box-shadow: inset 0px 0px 15px 0px black;
+  overflow: hidden;
 }
 
 .thumbnailImage {
-  height: 200px;
-  width: 200px;
   border-radius: 1rem;
+  height: 200px;
   opacity: 0.15;
+  width: 200px;
 }
 
-.card:hover .thumbnailImage,
-.card.hover .thumbnailImage {
+.card:hover .thumbnailImage {
+  animation: zoom-in-out 20s ease-in-out infinite;
+  -webkit-animation: zoom-in-out 20s ease-in-out infinite;
+  height: inherit;
   opacity: 1;
+  width: inherit;
 }
 
-.card:hover .fsb,
-fsbrd.hover .fsb {
-  content: url("./public/fsb-gif.gif");
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1.05, 1.05) rotate(0);
+  }
+  25% {
+    transform: scale(1.5, 1.5) rotate(45deg);
+  }
+  50% {
+    transform: scale(1.05, 1.05) rotate(0);
+  }
+  75% {
+    transform: scale(1.5, 1.5) rotate(-25deg);
+  }
+  100% {
+    transform: scale(1.05, 1.05) rotate(0);
+  }
 }
 
-.card:hover .ca,
-.card.hover .ca {
-  content: url("./public/ca-gif.gif");
+@-webkit-keyframes zoom-in-out {
+  0% {
+    -webkit-transform: scale(1.05, 1.05) rotate(0);
+  }
+  25% {
+    -webkit-transform: scale(1.5, 1.5) rotate(45deg);
+  }
+  50% {
+    -webkit-transform: scale(1.05, 1.05) rotate(0);
+  }
+  75% {
+    -webkit-transform: scale(1.5, 1.5) rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: scale(1.05, 1.05) rotate(0);
+  }
 }
 
-.card:hover .mmVetApp,
-.card.hover .mmVetApp {
-  content: url("./public/M&M veterinary clinic.gif");
+.thumbText {
+  color: var(--dark-blue);
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  position: absolute;
+  transition: all 0.25s ease-in-out;
+  z-index: 1;
 }
 
-.card:hover .movieHub,
-.card.hover .movieHub {
-  content: url("./public/mh-gif.gif");
+.card:hover .thumbText {
+  color: var(--deep-blue);
+  opacity: 0;
 }
 
-.card:hover .myThoughts,
-.card.hover .myThoughts {
-  content: url("./public/mt-gif.gif");
-}
-
-.card:hover .gifSifter,
-.card.hover .gifSifter {
-  content: url("./public/gs-gif.gif");
-}
-
-.card:hover .myThoughts,
-.card.hover .myThoughts {
-  content: url("./public/mt-gif.gif");
-}
-
-.card:hover .amm,
-.card.hover .amm {
-  content: url("./public/amm-gif.gif");
-}
-
-.card:hover .sca,
-.card.hover .sca {
-  content: url("./public/sca-gif.gif");
-}
-
-/*==========>> MEDIA QUERIES */
+/*==>> MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
   #container {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .card {
