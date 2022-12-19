@@ -46,7 +46,7 @@ projects.forEach((project) => {
   // BUILD TOOLS
   const builtWith = document.createElement("p");
   builtWith.classList.add("builtWith");
-  builtWith.innerText = "Build Tools:";
+  builtWith.innerText = "Build Tools";
   card.appendChild(builtWith);
 
   // PIPE SEPARATOR
